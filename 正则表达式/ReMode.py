@@ -1,4 +1,5 @@
 import re
+# 尽量使用泛匹配，使用括号得到匹配目标，尽量使用非贪婪模式，有换行符就用re.S
 content = 'Hello 123 4567 WORLD_THIS is a Regex DEMO'
 # 常规匹配，内容与正则一一匹配
 result = re.match('^Hello\s\d\d\d\s\d{4}\s\w{10}.*DEMO$',content)
